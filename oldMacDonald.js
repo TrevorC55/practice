@@ -63,7 +63,7 @@ const chicken = {
 // Tristan
 
 // Dylan
-const cat = {
+const ca = {
 	animalName: "cat",
 	animalSound: "meow!"
 }
@@ -121,16 +121,23 @@ const horse = {
 
 
 /*********************************************
+// put the console.log output program below here */
 
-// put the console.log output program below here
-
+let flar = [fox, dog, frog, cow, tiger, crow, sheep, pig, wolf, duck, ca, cat]
 const eio = "      E I E I O";
 
-console.log ("Old MacDonald had a farm");
-console.log (eio + "\n");
-
-for (n = 0; n <= 16; n++) {
-    console.log("Testing 123...");
+function speak(n) {
+   return (flar[n].animalSound + " " + flar[n].animalSound);
 }
 
-*/
+console.log (eio + "\n");
+
+for (n = 0; n <= 9; n++) {
+    
+    console.log ("Old MacDonald had a farm");
+    console.log("And on his farm he had a " + flar[n].animalName);
+    console.log(eio + "\n");
+    console.log("with a " + speak(n) + " here");
+    console.log(eio + "\n");
+}
+
