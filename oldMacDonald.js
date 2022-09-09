@@ -141,3 +141,9 @@ for (n = 0; n <= 9; n++) {
     console.log(eio + "\n");
 }
 
+let catJson = JSON.stringify(cat)
+
+console.log(catJson);
+
+let fs = require('fs');
+fs.writeFile('catJOSH.json', catJson, () => {});
