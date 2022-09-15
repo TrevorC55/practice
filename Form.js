@@ -1,11 +1,9 @@
 const fog = {
-    animalName: document.getElementById('text1'),
-    animalSound: "meow",
-    animalAge: 11
+    RainToday: document.getElementById('text1'),
 }
 
 
-let catJSON = JSON.stringify(fog);
+let RainJSON = JSON.stringify(fog);
 
 let fs = require('fs');
-fs.writeFile("catJSON.json",catJSON,() => {});
+fs.writeFile("RainJSON.json",catJSON,() => {});
