@@ -1,3 +1,4 @@
+
 import {Ghost} from './TheUselessGhost.js';
 import {Witch} from './witch.js';
 import {Deadite} from './Deadite.js';
@@ -7,6 +8,18 @@ import {Peter_Griffin} from './Peter Griffin.js';
 import {UnmatchedPowerOfTheSun} from './SUN.js';
 import {Dracula} from './class Dracula.js';
 import {Zombie} from './zombie.js'
+
+const mon = [
+    new Ghost,
+    new Witch,
+    new Deadite,
+    new Werewolf,
+    new Karen,
+    new Peter_Griffin,
+    new UnmatchedPowerOfTheSun,
+    new Dracula,
+    new Zombie
+];
 
 class Dice {
     constructor() {
@@ -21,9 +34,6 @@ class Dice {
     }
 }
 
-//create the monsters
-let casper = new Ghost();
-let sabrina = new Witch();
 let cDice = new Dice();
 let sDice = new Dice();
 
