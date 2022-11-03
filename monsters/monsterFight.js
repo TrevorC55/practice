@@ -1,21 +1,12 @@
-class Witch {
-    constructor() {
-      this.health = 100;
-      this.sound = "hehehehehe!";
-      this.damage = 10;
-      console.log ("New Witch created") ;
-      console.log (this.sound);
-    }
-  }
-
-  class Ghost {
-    constructor() {
-        this.health = 10;
-        this.damage = 2;
-        this.sound = "boo..."
-        console.log("Some Random person died")
-    }
-}
+import {Ghost} from './TheUselessGhost.js';
+import {Witch} from './witch.js';
+import {Deadite} from './Deadite.js';
+import {Werewolf} from './JS_werewolf.js';
+import {Karen} from './Karen.js';
+import {Peter_Griffin} from './Peter Griffin.js';
+import {UnmatchedPowerOfTheSun} from './SUN.js';
+import {Dracula} from './class Dracula.js';
+import {Zombie} from './zombie.js'
 
 class Dice {
     constructor() {
@@ -61,5 +52,3 @@ function fightMonsters(m1, m2) {
 }
 
 fightMonsters(casper, sabrina);
-
-

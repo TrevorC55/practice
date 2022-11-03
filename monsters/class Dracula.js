@@ -1,4 +1,4 @@
-class Dracula {
+export class Dracula {
     constructor() {
 this.health = 100;
 this.sound = "Whoooo";

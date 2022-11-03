@@ -1,4 +1,4 @@
-class Zombie {
+ export class Zombie {
     constructor() {
         this.health = 100;
         this.sound = "arrhh!"

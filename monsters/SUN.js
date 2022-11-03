@@ -1,4 +1,4 @@
-class UnmatchedPowerOfTheSun {
+ export class UnmatchedPowerOfTheSun {
     constructor() {
         this.Attack = 2147483647;
         this.Health = 2147483647;

@@ -1,4 +1,5 @@
-class Witch {
+
+export class Witch {
   constructor() {
     this.health = 100;
     this.sound = "hehehehehe!";
@@ -7,5 +8,3 @@ class Witch {
     console.log (this.sound);
   }
 }
-
-let w1 = new Witch();

@@ -1,4 +1,4 @@
-class Karen {
+ export class Karen {
     constructor() {
         this.attack = 100;
         this.health = 50;

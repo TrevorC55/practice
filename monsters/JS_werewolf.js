@@ -1,4 +1,4 @@
-class Werewolf {
+ export class Werewolf {
     constructor(){
         this.health = 100
         this.sound = "Awoooooo!"

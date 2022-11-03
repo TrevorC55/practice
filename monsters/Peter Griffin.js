@@ -1,5 +1,5 @@
 
-class Peter_Griffin{
+export class Peter_Griffin{
     constructor(){
       this.health= 150;
       this.sound="NHEHEHEHEHE";

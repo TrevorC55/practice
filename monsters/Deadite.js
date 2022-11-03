@@ -1,4 +1,4 @@
-class Deadite {
+export class Deadite {
     constructor(Health, Sound, Power){
         this.Health=100;
         this.Sound="I'LL SWALLOW YOUR SOUL!";
