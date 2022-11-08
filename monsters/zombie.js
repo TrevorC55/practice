@@ -3,7 +3,6 @@
         this.health = 100;
         this.sound = "arrhh!"
         this.damage = 0;
-        console.log ("New Zombie created...")
     }
 }
 

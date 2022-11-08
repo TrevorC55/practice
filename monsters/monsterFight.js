@@ -8,8 +8,14 @@ import {Peter_Griffin} from './Peter Griffin.js';
 import {UnmatchedPowerOfTheSun} from './SUN.js';
 import {Dracula} from './class Dracula.js';
 import {Zombie} from './zombie.js'
+let x1;
+let y1;
+let x;
+let y;
+var FightTotal = 1;
+var FightTotal2 = 1;
 
-const mon = [
+let mon = [
     new Ghost,
     new Witch,
     new Deadite,
@@ -28,37 +34,44 @@ class Dice {
 
     rollDice() {
         
-        this.face = Math.floor(Math.random() * 6) + 1; // randomly get number 1-6
+        this.face = Math.floor(Math.random() * 20) + 1; // randomly get number 1-6
         console.log ("rolling dice: " + "a " + this.face + "!");
         return this.face;
     }
 }
 
-let cDice = new Dice();
-let sDice = new Dice();
+let aDice = new Dice();
+let bDice = new Dice();
 
+function MonRandom() {
+    x = Math.floor(Math.random() * 9)
+    y = Math.floor(Math.random() * 9)
+    console.log(mon[x]);
+    console.log(mon[y]);
     
-function fightMonsters(m1, m2) {
-    // function to create the monsters who will fight
-    // passing in two monster objects as parameters
-
-    let monster1 = m1;
-    monster1.name = "Sabrina";
-    let monster2 = m2;
-    monster2.name = "Casper";
-
-    let m1Roll = cDice.rollDice();
-    let m2Roll = sDice.rollDice();
-
-    if (m1Roll === m2Roll ) {
-        console.log("it's a tie, roll again.")
-    } else if (m1Roll > m2Roll) {
-        console.log(monster1.name + " wins!"); 
-    } else {
-        console.log(monster2.name + " wins!")
-    }
-
-
 }
+    
+function fightMonsters(x,y,FightTotal,FightTotal2) {
 
-fightMonsters(casper, sabrina);
+    let mh = mon[y].health
+    let ma = mon[x].damage
+    let mh2 = mon[x].health
+    let ma2 = mon[y].damage
+
+while(FightTotal > 0, FightTotal2 > 0) {
+    let m1Roll = aDice.rollDice();
+    let m2Roll = bDice.rollDice();
+
+   if (m1Roll ==  m2Roll) {
+        console.log('WHAT HAPPENED????');
+    } else if (m1Roll > m2Roll ) {
+        return FightTotal = mh - ma;
+    } else  {
+        return FightTotal2 = mh2 - ma2;
+    }
+    }
+    console.log(FightTotal);
+    console.log(FightTotal2)
+}
+MonRandom(x1,y1);
+fightMonsters(x,y,FightTotal,FightTotal2);
