@@ -8,6 +8,8 @@ import {Peter_Griffin} from './Peter Griffin.js';
 import {UnmatchedPowerOfTheSun} from './SUN.js';
 import {Dracula} from './class Dracula.js';
 import {Zombie} from './zombie.js'
+import {Gaston} from './gaston.js'
+
 let x1;
 let y1;
 let x;
@@ -22,7 +24,8 @@ let mon = [
     new Peter_Griffin,
     new UnmatchedPowerOfTheSun,
     new Dracula,
-    new Zombie
+    new Zombie,
+    new Gaston
 ];
 
 class Dice {
@@ -42,8 +45,8 @@ let aDice = new Dice();
 let bDice = new Dice();
 
 function MonRandom() {
-    x = Math.floor(Math.random() * 9)
-    y = Math.floor(Math.random() * 9)
+    x = Math.floor(Math.random() * mon.length)
+    y = Math.floor(Math.random() * mon.length)
     console.log(mon[x]);
     console.log(mon[y]);
     
@@ -69,7 +72,14 @@ do {
     } else  {
         mh2 = mh2 - ma2;
     };
+    if (mh <= 0) {
+        console.log(mon[x].sound)
+    };
+    if (mh2 <= 0) {
+        console.log(mon[y].sound)
+    };
     console.log(mh, mh2);
+    
   } while (mh > 0 && mh2 > 0);
 }
 MonRandom(x1,y1);
