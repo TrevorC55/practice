@@ -12,8 +12,6 @@ let x1;
 let y1;
 let x;
 let y;
-var FightTotal = 1;
-var FightTotal2 = 1;
 
 let mon = [
     new Ghost,
@@ -51,27 +49,28 @@ function MonRandom() {
     
 }
     
-function fightMonsters(x,y,FightTotal,FightTotal2) {
+function fightMonsters(x,y,) {
 
+    var FightTotal;
+    var FightTotal2;
     let mh = mon[y].health
     let ma = mon[x].damage
     let mh2 = mon[x].health
     let ma2 = mon[y].damage
 
-while(FightTotal > 0, FightTotal2 > 0) {
+do {
     let m1Roll = aDice.rollDice();
     let m2Roll = bDice.rollDice();
 
    if (m1Roll ==  m2Roll) {
         console.log('WHAT HAPPENED????');
     } else if (m1Roll > m2Roll ) {
-        return FightTotal = mh - ma;
+        mh = mh - ma;
     } else  {
-        return FightTotal2 = mh2 - ma2;
-    }
-    }
-    console.log(FightTotal);
-    console.log(FightTotal2)
+        mh2 = mh2 - ma2;
+    };
+    console.log(mh, mh2);
+  } while (mh > 0 && mh2 > 0);
 }
 MonRandom(x1,y1);
-fightMonsters(x,y,FightTotal,FightTotal2);
+fightMonsters(x,y);
