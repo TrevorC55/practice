@@ -53,9 +53,6 @@ function MonRandom() {
 }
     
 function fightMonsters(x,y,) {
-
-    var FightTotal;
-    var FightTotal2;
     let mh = mon[y].health
     let ma = mon[x].damage
     let mh2 = mon[x].health
